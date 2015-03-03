@@ -2,8 +2,20 @@ language: java
 
 jdk:
    - oraclejdk7
-   
-   
+   - openjdk7
+env:
+ matrix:
+  - FOO=bar
+  - BAR=foo
+ global:
+  - secure: SFKl0qIhbqY10fOyITV7cFMHRCivBh5vfvaR0fGUrS/SFMUEZiAuFL5JOqwatOUQhz53e0+1Xf1ePeoGJQcKxprnK7x8pDs8kMK7Kwc2MXYh5SR7LuuUpNjfjDOv6ZdzBsVDmhp+OyJb5yM/7OcenpZcOazgtcFrnZuEh/nS66sAkpRMElgQzBve9rmQZFhcr/0CjVuAhslwSMW/R8jYZGe53ErCk46AhJdQW1Idjm3ifEuytqcF9BYM+gk4BALWT2rkiwcW41HbsPccMn8B6rxtKjNgbEQ1EB/Ekex7b0pxW+yNnh/tCWz7QPxneJpppgVz2+zOYpccNnJXYs2eBw== 
+  
 script: 
    - ant coverage
 
+matrix:
+ exclude:
+  - jdk: openjdk7
+    env: FOO=bar
+   
+   
