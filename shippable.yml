@@ -16,6 +16,6 @@ script:
 matrix:
  exclude:
   - jdk: openjdk7
-    env: FOO=bar
+  - env: FOO=bar
    
    
