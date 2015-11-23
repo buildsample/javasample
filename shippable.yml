@@ -1,6 +1,4 @@
 language: java
-
-
 jdk:
    - oraclejdk7
    - openjdk7
@@ -17,6 +15,6 @@ script:
 matrix:
  exclude:
   - jdk: openjdk7
-  - env: FOO=bar
+    env: FOO=bar
    
    
