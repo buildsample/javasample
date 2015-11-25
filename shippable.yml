@@ -2,8 +2,11 @@ language: java
 
 jdk:
    - oraclejdk7
-   
+ 
+env:
+ - secure: N900bs0n0BB5RbSF3nOwWzblMXkIbICamRb+b454wJKMrOAZP8KC48pmG/mRfgvIzO7KmkLfKvFx6LaxskaELlp7y2dzF+JlCoMIc07yZ7A/HfoGbAWoIZWAfWgwKYCUw7d9qqLOvJIQk6nt4xcHK7wnSLQDhS9GAmlPfwJgnoIuCTpqKAstZks1ksylQwV6skzUVbMZDFC8Udbf1W8HVkw76Dr8DoCthzplVvCl+pdYBg1+pRKXmJtX7Os0UuI2MpxBFMXNFkN3jk7sqyG9M8QJ76ZstFLSybd9fBqFtZ1L7bVgZDryyia3RqdV0azKr2DebVGZqLzLj8YBUDlCCQ== 
    
 script: 
    - ant coverage
+   - echo $env1
 
